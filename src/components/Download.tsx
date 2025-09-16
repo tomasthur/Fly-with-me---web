@@ -1,5 +1,5 @@
 import { 
-  Download, 
+  Download as DownloadIcon, 
   Smartphone, 
   Star, 
   CheckCircle, 
@@ -58,7 +58,7 @@ export default function Download() {
 
                 <div className="space-y-4">
                   <button className="w-full bg-accent-yellow hover:bg-accent-yellow/90 text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center space-x-3">
-                    <Download className="h-8 w-8" />
+                    <DownloadIcon className="h-8 w-8" />
                     <div className="text-left">
                       <div className="text-sm">Stiahnuť z</div>
                       <div className="text-lg font-bold">Google Play</div>
@@ -136,7 +136,7 @@ export default function Download() {
               Pripoj sa k miliónom hráčov po celom svete a staň sa najúspešnejším leteckým magnátom!
             </p>
             <button className="bg-gradient-to-r from-accent-yellow to-accent-red hover:from-accent-yellow/90 hover:to-accent-red/90 text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2 mx-auto">
-              <Download className="h-5 w-5" />
+              <DownloadIcon className="h-5 w-5" />
               <span>Stiahnuť teraz</span>
               <ArrowRight className="h-5 w-5" />
             </button>
