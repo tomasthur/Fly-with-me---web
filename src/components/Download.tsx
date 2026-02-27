@@ -4,7 +4,6 @@ import {
   Star, 
   CheckCircle, 
   ArrowRight,
-  Apple,
   QrCode
 } from 'lucide-react'
 
@@ -14,13 +13,12 @@ export default function Download() {
     'Bez reklám',
     'Offline hranie',
     'Pravidelné aktualizácie',
-    'Podpora pre Android a iOS',
+    'Podpora pre Android',
     'Cloudové ukladanie'
   ]
 
   const systemRequirements = [
-    { platform: 'Android', version: '5.0+', storage: '100 MB' },
-    { platform: 'iOS', version: '12.0+', storage: '100 MB' }
+    { platform: 'Android', version: '5.0+', storage: '100 MB' }
   ]
 
   return (
@@ -55,23 +53,20 @@ export default function Download() {
                 <p className="text-primary-light text-lg mb-8">
                   Stiahni si hru zadarmo a začni budovať svoju leteckú ríšu!
                 </p>
-
+                
                 <div className="space-y-4">
-                  <button className="w-full bg-accent-yellow hover:bg-accent-yellow/90 text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center space-x-3">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.tomasthur.flywithme"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-accent-yellow hover:bg-accent-yellow/90 text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center space-x-3"
+                  >
                     <DownloadIcon className="h-8 w-8" />
                     <div className="text-left">
                       <div className="text-sm">Stiahnuť z</div>
                       <div className="text-lg font-bold">Google Play</div>
                     </div>
-                  </button>
-                  
-                  <button className="w-full bg-white hover:bg-gray-100 text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center space-x-3">
-                    <Apple className="h-8 w-8" />
-                    <div className="text-left">
-                      <div className="text-sm">Stiahnuť z</div>
-                      <div className="text-lg font-bold">App Store</div>
-                    </div>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -127,7 +122,7 @@ export default function Download() {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+            <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-accent-yellow/20 to-accent-red/20 backdrop-blur-sm rounded-2xl p-8 border border-accent-yellow/30">
             <h3 className="text-2xl font-bold text-white mb-4">
               Pripravený začať svoju leteckú kariéru?
@@ -135,11 +130,16 @@ export default function Download() {
             <p className="text-primary-light text-lg mb-6">
               Pripoj sa k miliónom hráčov po celom svete a staň sa najúspešnejším leteckým magnátom!
             </p>
-            <button className="bg-gradient-to-r from-accent-yellow to-accent-red hover:from-accent-yellow/90 hover:to-accent-red/90 text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2 mx-auto">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.tomasthur.flywithme"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-accent-yellow to-accent-red hover:from-accent-yellow/90 hover:to-accent-red/90 text-primary-dark px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2 mx-auto"
+            >
               <DownloadIcon className="h-5 w-5" />
               <span>Stiahnuť teraz</span>
               <ArrowRight className="h-5 w-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
